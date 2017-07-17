@@ -47,7 +47,7 @@
 #****************************************************************************************************
 
 frame .f1
-text .f1.t1 -height 10
+label .f1.l -height 10 -text "1.Templete Create"
 ttk::combobox .cb -text "Select" -width 10 -value {a b c}
 
 #----------------------------------------------------------------------------------------------------
@@ -56,14 +56,12 @@ ttk::combobox .cb -text "Select" -width 10 -value {a b c}
 #pack .f1 .f2
 #pack .f2.b1 .f2.b2 .f2.b3 .f2.b4 -side left -side left -side left
 pack .f1
-pack .f1.t1
-pack .cb
+pack .f1.l
+pack .f1.l .cb -side top
 
 #****************************************************************************************************
 #4 The process
 #****************************************************************************************************
-
-.f1.t1 insert end "1.Templete Create"
 
 #grid .cb
 
