@@ -1,0 +1,148 @@
+# Reading G:/Program Files (x86)/modeltech64_10.2c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.2c Jul 19 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L xilinxcorelib_ver -L unimacro_ver -L unisims_ver -L secureip -do {
+#     add wave -position insertpoint -divide Testbench;
+#     add wave -position insertpoint -hex -group top sim:/test_4_tb/*;
+#     add wave -position insertpoint -hex -group hmi_phy sim:/Testbench/hmi_phy/*
+#     add wave -position insertpoint -divide dut;
+#     add wave -position insertpoint -hex -group dut sim:/Testbench/dut/*
+# 
+#     add wave -position insertpoint -group hmi_mac_core sim:/Testbench/dut/hmi_ctrl_top/hmi_mac_core/*
+#     add wave -position insertpoint -group hmi_cmd_module  sim:/Testbench/dut/hmi_ctrl_top/hmi_cmd_module/*
+#     add wave -position insertpoint -group firmware_update_module sim:/Testbench/dut/hmi_ctrl_top/firmware_update_module/*
+#     add wave -position insertpoint -group trimac_localloik sim:/Testbench/dut/hmi_ctrl_top/hmi_mac_core/trimac_locallink/*
+# 
+#     add wave -position insertpoint -divide flash;
+#     add wave -position insertpoint -group spi_flash_core sim:/Testbench/dut/spi_flash_core/*
+#     add wave -position insertpoint -group spi_flash_tx sim:/Testbench/dut/spi_flash_core/spi_flash_tx/*
+#     add wave -position insertpoint -group spi_flash_rx sim:/Testbench/dut/spi_flash_core/spi_flash_rx/*
+#     
+#     run 400us
+#     add log -r /*
+#     archive write debug.dbar -wlf wave.wlf -include_src
+# } -lib work -gui -voptargs=\"+acc\" work.test_4_tb glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_top.v(223): (vopt-2685) [TFMPC] - Too few port connections for 's2p_ctrl_module'.  Expected 10, found 8.
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_top.v(223): (vopt-2718) [TFMPC] - Missing connection for port 'syn_b2_grp'.
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_top.v(223): (vopt-2718) [TFMPC] - Missing connection for port 'hmi_b2_grp'.
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_top.v(233): (vopt-2685) [TFMPC] - Too few port connections for 'p2s_ctrl_module'.  Expected 9, found 7.
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_top.v(233): (vopt-2718) [TFMPC] - Missing connection for port 'syn_b1_grp'.
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_top.v(233): (vopt-2718) [TFMPC] - Missing connection for port 'hmi_b1_grp'.
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "test_4_top(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master_tx(fast)".
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_tb.v(71): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 21, found 19.
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_tb.v(71): (vopt-2718) [TFMPC] - Missing connection for port 'fpga1_out'.
+# 
+# ** Warning: ../../../prj/test_4_top/test_4_tb.v(71): (vopt-2718) [TFMPC] - Missing connection for port 'fpga1_in'.
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "p2s_ctrl_module(fast)".
+# 
+# Loading work.test_4_tb(fast)
+# Loading work.test_4_top(fast)
+# Loading work.clk_rst_module(fast)
+# Loading work.clk_gen_core(fast)
+# Loading unisims_ver.IBUFG(fast)
+# Loading unisims_ver.PLL_BASE(fast)
+# Loading unisims_ver.PLL_ADV(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading unisims_ver.ODDR2(fast)
+# Loading work.led_ctrl_module(fast)
+# Loading work.pad_ctrl_module(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading unisims_ver.OBUFDS(fast)
+# Loading work.s2p_ctrl_module(fast)
+# Loading work.s2p_ctrl_core(fast)
+# Loading work.p2s_ctrl_module(fast)
+# Loading work.spi_master_core(fast)
+# Loading work.spi_fifo_core(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_3(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_3_CONV_VER(fast)
+# Loading xilinxcorelib_ver.fifo_generator_v9_3_bhv_ver_as(fast)
+# Loading xilinxcorelib_ver.fifo_generator_v9_3_sync_stage(fast)
+# Loading work.spi_master_tx(fast)
+# Loading work.spi_master_rx(fast)
+# Loading work.debug_icon_core(fast)
+# Loading work.debug_ila_core(fast)
+# Loading work.debug_vio_core(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3017) ../../../prj/test_4_top/test_4_top.v(223): [TFMPC] - Too few port connections. Expected 10, found 9.
+# 
+#         Region: /test_4_tb/dut/s2p_ctrl_module
+# ** Warning: (vsim-3722) ../../../prj/test_4_top/test_4_top.v(223): [TFMPC] - Missing connection for port 'syn_b2_grp'.
+# 
+# ** Warning: (vsim-3015) ../../../prj/test_4_top/test_4_top.v(257): [PCDPC] - Port size (16 or 16) does not match connection size (256) for port 'len'. The port definition is at: ../../../src/spi_master_core/spi_maser_core.v(42).
+# 
+#         Region: /test_4_tb/dut/spi_master_core
+# ** Warning: (vsim-3015) ../../../src/spi_master_core/spi_maser_core.v(164): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'nstate'. The port definition is at: ../../../src/spi_master_core/spi_master_tx.v(52).
+# 
+#         Region: /test_4_tb/dut/spi_master_core/spi_spi_tx
+# ** Warning: (vsim-3015) ../../../src/spi_master_core/spi_maser_core.v(164): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'cmd_reg'. The port definition is at: ../../../src/spi_master_core/spi_master_tx.v(54).
+# 
+#         Region: /test_4_tb/dut/spi_master_core/spi_spi_tx
+# ** Warning: (vsim-3015) ../../../src/spi_master_core/spi_maser_core.v(179): [PCDPC] - Port size (8 or 8) does not match connection size (4) for port 'cstate'. The port definition is at: ../../../src/spi_master_core/spi_master_rx.v(43).
+# 
+#         Region: /test_4_tb/dut/spi_master_core/spi_spi_rx
+# ** Warning: (vsim-3015) ../../../prj/test_4_top/test_4_top.v(386): [PCDPC] - Port size (8 or 8) does not match connection size (24) for port 'SYNC_OUT'. The port definition is at: ../../../src/ipcore_dir/debug_vio_core.v(24).
+# 
+#         Region: /test_4_tb/dut/debug_vio_core
+# 
+#     add wave -position insertpoint -divide Testbench 
+# 
+#     add wave -position insertpoint -hex -group top sim:/test_4_tb/* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Administrator  Hostname: GW59ZRIQJ3MCVB5  ProcessID: 10088
+# 
+#           Attempting to use alternate WLF file "./wlft6ziafk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft6ziafk
+# 
+# 
+#     add wave -position insertpoint -hex -group hmi_phy sim:/Testbench/hmi_phy/*
+#     add wave -position insertpoint -divide dut 
+# (vish-4014) No objects found matching '/Testbench/hmi_phy/*'.
+# 
+#     add wave -position insertpoint -hex -group dut sim:/Testbench/dut/*
+# 
+#     add wave -position insertpoint -group hmi_mac_core sim:/Testbench/dut/hmi_ctrl_top/hmi_mac_core/*
+#     add wave -position insertpoint -group hmi_cmd_module  sim:/Testbench/dut/hmi_ctrl_top/hmi_cmd_module/*
+#     add wave -position insertpoint -group firmware_update_module sim:/Testbench/dut/hmi_ctrl_top/firmware_update_module/*
+#     add wave -position insertpoint -group trimac_localloik sim:/Testbench/dut/hmi_ctrl_top/hmi_mac_core/trimac_locallink/*
+# 
+#     add wave -position insertpoint -divide flash 
+# (vish-4014) No objects found matching '/Testbench/dut/*'.
+# 
+#     add wave -position insertpoint -group spi_flash_core sim:/Testbench/dut/spi_flash_core/*
+#     add wave -position insertpoint -group spi_flash_tx sim:/Testbench/dut/spi_flash_core/spi_flash_tx/*
+#     add wave -position insertpoint -group spi_flash_rx sim:/Testbench/dut/spi_flash_core/spi_flash_rx/*
+#     
+#     run 400us
+#     add log -r /*
+#     archive write debug.dbar -wlf wave.wlf -include_src
+#  
+# (vish-4014) No objects found matching '/Testbench/dut/spi_flash_core/*'.
+add wave -position insertpoint sim:/test_4_tb/dut/p2s_ctrl_module/*
+run -all
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# Break key hit 
+# Break in Module PLL_ADV at G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/unisims/PLL_ADV.v line 1933

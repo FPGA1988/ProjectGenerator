@@ -1,0 +1,20 @@
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module spi_fifo_core
+-- Compiling module clk_gen_core
+-- Compiling module debug_icon_core
+-- Compiling module debug_ila_core
+-- Compiling module debug_vio_core
+-- Compiling module clk_rst_module
+-- Compiling module led_ctrl_module
+-- Compiling module pad_ctrl_module
+-- Compiling module p2s_ctrl_module
+-- Compiling module s2p_ctrl_module
+-- Compiling module s2p_ctrl_core
+-- Compiling module spi_master_tx
+-- Compiling module spi_master_rx
+-- Compiling module spi_master_core
+-- Compiling module test_4_top
+-- Compiling module test_4_tb
+
+Top level modules:
+	test_4_tb

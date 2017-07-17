@@ -1,0 +1,375 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dG:/github_project/CurrentTestBoard/trunk/fpga/projects_mm/sim/script/temp
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1499087404
+V_I`?T`M39eQ]ZML;;15zY1
+04 9 4 work test_4_tb fast 0
+04 4 4 work glbl fast 0
+=1-0857009d399e-595a422b-2ec-1eb0
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unimacro_ver -L unisims_ver -L secureip +acc
+n@_opt
+OL;O;10.2c;57
+vclk_gen_core
+Z1 !s110 1499087391
+I8USAM9hLANfnCQQ>Yjg1P0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z3 dG:/github_project/CurrentTestBoard/trunk/fpga/projects_mm/sim/script/temp
+w1498565261
+8../../../src/ipcore_dir/clk_gen_core.v
+F../../../src/ipcore_dir/clk_gen_core.v
+L0 71
+Z4 OL;L;10.2c;57
+r1
+31
+Z5 !s108 1499087391.562000
+Z6 !s107 ../../include//UserData.h|../../../src/include//hmi_header.vh|../../../src/include//eeprom.vh|../../../src/include//flash.vh|../../../src/include//spi_master.vh|../../../src/include//include.vh|../../../prj/test_4_top/test_4_tb.v|../../../prj/test_4_top/test_4_top.v|../../../src/spi_master_core/spi_maser_core.v|../../../src/spi_master_core/spi_master_rx.v|../../../src/spi_master_core/spi_master_tx.v|../../../src/s2p_ctrl_core.v|../../../src/s2p_ctrl_module.v|../../../src/p2s_ctrl_module.v|../../../src/pad_ctrl_module.v|../../../src/led_ctrl_module.v|../../../src/clk_rst_module.v|../../../src/ipcore_dir/debug_vio_core.v|../../../src/ipcore_dir/debug_ila_core.v|../../../src/ipcore_dir/debug_icon_core.v|../../../src/ipcore_dir/clk_gen_core.v|../../../src/ipcore_dir/spi_fifo_core.v|
+Z7 !s90 +incdir+../../include/+../../../src/include/+../../../src/spi_flash_core|+define+SIM|-timescale|1ns/1ps|-f|../../flist/rtl_sim_t.f|
+Z8 o-timescale 1ns/1ps -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z9 !s92 +incdir+../../include/+../../../src/include/+../../../src/spi_flash_core +define+SIM -timescale 1ns/1ps -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 ]:IgOaSLO`Un=^A@P2;hg2
+!s85 0
+!i111 0
+vclk_rst_module
+R1
+IT`]=[DVo@3?ZoJEjS40fH3
+R2
+R3
+w1498749388
+8../../../src/clk_rst_module.v
+F../../../src/clk_rst_module.v
+L0 26
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 hMn?K8bz?AgJnb_K?P74n2
+!s85 0
+!i111 0
+vdebug_icon_core
+R1
+I_4FU?QCh@I[A;l8A8ebOo1
+R2
+R3
+w1498959355
+8../../../src/ipcore_dir/debug_icon_core.v
+F../../../src/ipcore_dir/debug_icon_core.v
+L0 21
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 V?ga_PFGmD]3lDXSQ<0^<0
+!s85 0
+!i111 0
+vdebug_ila_core
+R1
+IS8c]Q7@C4Z]kleREUX4622
+R2
+R3
+w1498743493
+8../../../src/ipcore_dir/debug_ila_core.v
+F../../../src/ipcore_dir/debug_ila_core.v
+L0 21
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 bMAH?e5<VP2Zc2kWQM1SL1
+!s85 0
+!i111 0
+vdebug_vio_core
+R1
+Il5PQ;YIYZTh3Pk^5c93oa1
+R2
+R3
+w1489214730
+8../../../src/ipcore_dir/debug_vio_core.v
+F../../../src/ipcore_dir/debug_vio_core.v
+L0 21
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 9=jGBe]AefMcfLRE[aiNO0
+!s85 0
+!i111 0
+vglbl
+Ic9en_ObVeTa9PA66FG^fd0
+R2
+R3
+w1381681120
+8G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FG:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R4
+r1
+31
+o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+R1
+!s100 V<`KW`8LXe32mQ2Gdj1MB2
+!s108 1499087391.516000
+!s107 G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -work|work|G:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i10b 1
+!s85 0
+!i111 0
+vled_ctrl_module
+R1
+I9a;IoVBE18ZLdOi9BMGC=1
+R2
+R3
+w1494034799
+8../../../src/led_ctrl_module.v
+F../../../src/led_ctrl_module.v
+L0 26
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 aSkFJ3V]VP?Lg^DdadV_C2
+!s85 0
+!i111 0
+vp2s_ctrl_module
+R1
+I_:]d7[jR7LZKfFCd>^]hm1
+R2
+R3
+w1499087355
+8../../../src/p2s_ctrl_module.v
+F../../../src/p2s_ctrl_module.v
+L0 30
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 H:[`chb]g9O91eflSz7;93
+!s85 0
+!i111 0
+vpad_ctrl_module
+R1
+I4^d^H^BPbemeckgO=@ChD0
+R2
+R3
+w1494050171
+8../../../src/pad_ctrl_module.v
+F../../../src/pad_ctrl_module.v
+L0 33
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 bW3R<0=P6=U30Sak5<3gB0
+!s85 0
+!i111 0
+vs2p_ctrl_core
+R1
+Im6VSIE[^cgagka4J:36fm3
+R2
+R3
+w1494044617
+8../../../src/s2p_ctrl_core.v
+F../../../src/s2p_ctrl_core.v
+L0 24
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 aOJlhQTlGKjIhb?[^;OUb0
+!s85 0
+!i111 0
+vs2p_ctrl_module
+R1
+IcQ842llI2hBAJM;TkHB`P1
+R2
+R3
+w1494050209
+8../../../src/s2p_ctrl_module.v
+F../../../src/s2p_ctrl_module.v
+L0 30
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 9DI37[a`d`TzZ_6<PEb[@0
+!s85 0
+!i111 0
+vspi_fifo_core
+R1
+I>PHXQPdU7hIiENcPRDS0a1
+R2
+R3
+w1487080820
+8../../../src/ipcore_dir/spi_fifo_core.v
+F../../../src/ipcore_dir/spi_fifo_core.v
+L0 39
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 2[HiYSQedXdS9M5FedQgH0
+!s85 0
+!i111 0
+vspi_master_core
+R1
+Ial`T4o]W4jk[JBGNORLg>3
+R2
+R3
+w1498978398
+8../../../src/spi_master_core/spi_maser_core.v
+F../../../src/spi_master_core/spi_maser_core.v
+L0 32
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 `MhcGn6eQJ;ko83f6WCL32
+!s85 0
+!i111 0
+vspi_master_rx
+R1
+I<HQA58efj8gi2LD<:SD2f1
+R2
+R3
+w1498989243
+8../../../src/spi_master_core/spi_master_rx.v
+F../../../src/spi_master_core/spi_master_rx.v
+L0 33
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 VPTVDgeObik=4DG0:0`iO3
+!s85 0
+!i111 0
+vspi_master_tx
+R1
+I^@BD1]kL@Tl9<^zakNfU<0
+R2
+R3
+w1498989211
+8../../../src/spi_master_core/spi_master_tx.v
+F../../../src/spi_master_core/spi_master_tx.v
+L0 33
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ekodf1TWK?B^SQcaWo_M23
+!s85 0
+!i111 0
+vtest_4_tb
+R1
+I@GSh93OFO?11;X@^Q9S`k2
+R2
+R3
+w1499086688
+8../../../prj/test_4_top/test_4_tb.v
+F../../../prj/test_4_top/test_4_tb.v
+L0 25
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ]G3k`WBP?O9^7Y>[6AcKe1
+!s85 0
+!i111 0
+vtest_4_top
+R1
+Ik2DXUAFP;9S6En`lb]53J0
+R2
+R3
+w1499086559
+8../../../prj/test_4_top/test_4_top.v
+F../../../prj/test_4_top/test_4_top.v
+L0 32
+R4
+r1
+31
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 5HR9K<aozXSa=4oV>Ag7F3
+!s85 0
+!i111 0
