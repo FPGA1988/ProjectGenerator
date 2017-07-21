@@ -1,0 +1,9 @@
+../rtl/digital_top.v
+../rtl/clk_rst_module.v
+../rtl/por_cfg_module.v
+../rtl/mode_det_module.v
+../rtl/ee_ctrl_module.v
+../rtl/iic_det_module.v
+../rtl/iic_rx_module.v
+../rtl/iic_tx_module.v
+../rtl/iic_addr_module.v

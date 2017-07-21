@@ -48,15 +48,23 @@
 variable CMD_WIDTH
 variable ss_path
 
+#wm geometry .window 300x200
 
 #****************************************************************************************************
 #3 The frame setup up
 #****************************************************************************************************
 
-frame .f1
-text .f1.t1 -width 105 -height 40 
-ttk::button .f1.b1 -text "创建" -width 10 -command {setup}
-ttk::button .f1.b2 -text "退出" -width 10 -command {exit}
+frame .f1 -bg black
+text .f1.t1 -width 105 -height 30 -padx 24 -pady 20 -bg black -fg white -relief solid
+text .f1.t2 -bg black -fg white -relief solid -justify now right
+button .f1.b1 -text "创建" -width 10 -command {setup} -relief solid -activebackground red -background black \
+-foreground white
+button .f1.b1 -text "测试" -width 10 -command {test} -relief solid -activebackground red -background black \
+-foreground white
+button .f1.b2 -text "退出" -width 10 -command {exit} -background black -foreground white -relief solid
+#highlightColor
+
+#.f1.b1 configure -highlightColor red
 
 #----------------------------------------------------------------------------------------------------
 #3.2 Pack the compoents
@@ -65,33 +73,44 @@ ttk::button .f1.b2 -text "退出" -width 10 -command {exit}
 pack .f1
 pack .f1.t1
 #pack .f2.b1 .f2.b2 .f2.b3 .f2.b4 -side left -side left -side left
-pack .f1.b1 .f1.b2 -side top
+pack .f1.t2 .f1.b1 .f1.b2 -side top
 
 #****************************************************************************************************
 #4 The process
 #****************************************************************************************************
-set strings \
+set logo \
 {
-  
-    
                                                                                                     
-  l/////////////l/       //lll///    ////////               /l  /l/////////////l  ///////  //////   
-  kl////kkkl////kl    /ckt//  //tkc   /kkkc/               lk/  lk////lkkk////lk  /lkkkl/   lkt//   
- /c     tkk/    /l   ckk/        ct    tkk/               /k/   l/    /kkt     l/   kkk     tl      
+  l/////////////l///ttttttt//lll///kkkk////////lllllllllllllll/l.l/l/////////////lqq///////bb//////   
+  kl////kkkl////k//lhhhh/ckt//jj//tkc.../kkkc/kkkkkkkkkkkkkkklk/2rlk////lkkk////lkqq/lkkkl/ccclkt//   
+ /c     tkk/                                                                                      /l
+        tkk/     
+        tkk/             //lll///    ////////               /l  /l/////////////l  ///////  //////   
+        kkkl          /ckt//  //tkc   /kkkc/               lk/  lk////lkkk////lk  /lkkkl/   lkt//   
+        tkk/         ckk/        ct    tkk/               /k/   l/    /kkt     l/   kkk     tl      
         tkk/        lkkl          /    tkk/              /k/          /kkt          kkk   /c/       
         tkk/        kkk/               tkk/             /k/           /kkt          kkk//tk/        
         tkk/        kkk/               tkk/            /k/            /kkt          kkk/lkkkl       
         tkk/        lkkt               tkk/           /kl             /kkt          kkk   lkkt/     
         tkk/         lkkc        /k    tkk/      lt  /kl              /kkt          kkk    /tkk/    
-      /lkkkc//        /ltkl/////tkl  //kkkt////ltk  /kc             //ckkk//      /lkkkc/  /ckkkt// 
-      ////////            ////////   ////////////   //              ////////      ///////  //////// 
-                                                                                                    
-                                Tcl/Tk Synthesis&Verification Bench
-                                                                                          by Bwang
-                                                                                        2017-07-15
+        tkk/          /ltkl/////tkl  //kkkt////ltk  /kc             //ckkk//      /lkkkc/  /ckkkt// 
+        tkk/              ////////   ////////////   //              ////////      ///////  //////// 
+        tkk/
+      /lkkkc//
+      ////////
+
+
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }
 
-.f1.t1 insert end $strings                                    
+#Tcl/Tk Synthesis&Verification Bench
+
+set copyright\
+{
+    Copyright (c) 2017, Bwang,Giantec,Co,.Ltd.All Rights Reserved
+}
+.f1.t1 insert end $logo
+.f1.t2 insert end $copyright
 
 #proc module_conf {} {    
 #    global MAC_SOURCE_REPLACE_EN     
@@ -224,6 +243,11 @@ proc setup {} {
     button .f1.b3 -text "3.PUH" -width 10 -command {prj_up_his}
     pack .f1
     pack .f1.b1 .f1.b2 .f1.b3 -side top
+}
+
+proc prj_dir_gen {} {
+    set ss_path "./subscripts"
+    exec tclsh $ss_path/ic_flow.tcl
 }
 
 proc prj_dir_gen {} {

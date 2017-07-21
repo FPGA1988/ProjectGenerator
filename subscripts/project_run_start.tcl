@@ -40,38 +40,35 @@
 #----------------------------------------------------------------------------------------------------
 #2.1 The variable define
 #----------------------------------------------------------------------------------------------------
-
+set product {EEPROM MOTOR_DRIVER SMART_CARD}
 
 #****************************************************************************************************
 #3 The frame setup up
 #****************************************************************************************************
 
-frame .f1
-label .f1.l -height 10 -text "1.Templete Create"
-ttk::combobox .cb -text "Select" -width 10 -value {a b c}
+
+
+ttk::frame .f1
+ttk::frame .f2
+#label .f1.l -height 10 -text "1.Templete Create" -bg black
+label .f1.l1 -text "1.Templete Create" -bg white
+label .f1.l2 -text "²úÆ·Ñ¡Ôñ" -bg white
+ttk::combobox .f1.c1 -text "Select" -value $product
+ttk::button .f1.b1 -text "Gen Start"
+
+label .f2.l1 -text "2.Flow Start" -bg white
 
 #----------------------------------------------------------------------------------------------------
 #3.2 Pack the compoents
 #----------------------------------------------------------------------------------------------------
-#pack .f1 .f2
+pack .f1 .f2
 #pack .f2.b1 .f2.b2 .f2.b3 .f2.b4 -side left -side left -side left
-pack .f1
-pack .f1.l
-pack .f1.l .cb -side top
+pack .f1.l1
+pack .f1.l2 .f1.c1 .f1.b1 -side left
+pack .f2.l1
+#pack .f1.l2 .f1.cb .f1.b1 -side left
 
 #****************************************************************************************************
 #4 The process
 #****************************************************************************************************
-
-#grid .cb
-
-proc UpdateCombo {w} {
-    set new [$w get]
-    set values [$w cget -values]
-    if {$new ni $values} {
-        set values [linsert $values 0 $new]
-        $w configure -values $values
-    }
-}
-
-bind .cb <Return> {UpdateCombo %w}
+#pack .pw
